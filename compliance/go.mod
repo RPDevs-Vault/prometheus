@@ -14,7 +14,7 @@ require (
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/oklog/run v1.2.0 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
-	github.com/prometheus/client_golang/exp v0.0.0-20260602051030-3537b20ac86b // indirect
+	github.com/prometheus/client_golang/exp v0.0.0-20260621222812-74560058a7af // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
 	github.com/prometheus/common v0.69.0 // indirect
 	github.com/prometheus/prometheus v0.307.4-0.20251119130332-1174b0ce4f1f // indirect

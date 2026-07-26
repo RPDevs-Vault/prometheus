@@ -24,8 +24,8 @@ github.com/oklog/run v1.2.0/go.mod h1:mgDbKRSwPhJfesJ4PntqFUbKQRZ50NgmZTSPlFA0YF
 github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e/go.mod h1:pJLUxLENpZxwdsKMEsNbx1VGcRFpLqf3715MtcvvzbA=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRIccs7FGNTlIRMkT8wgtp5eCXdBlqhYGL6U=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
-github.com/prometheus/client_golang/exp v0.0.0-20260602051030-3537b20ac86b h1:633sracZPrB7O7T6r5skFtwqXDOrXlQkE9Wr5DnYVJE=
-github.com/prometheus/client_golang/exp v0.0.0-20260602051030-3537b20ac86b/go.mod h1:7hAEIbflIgnK0HubVroVy6UgJYYKryF6p3mP/dcyay8=
+github.com/prometheus/client_golang/exp v0.0.0-20260621222812-74560058a7af h1:spGyHdH2AO/o7ZZ4yPpmz9SLBHmAYeXr0WEqKQAekCc=
+github.com/prometheus/client_golang/exp v0.0.0-20260621222812-74560058a7af/go.mod h1:7hAEIbflIgnK0HubVroVy6UgJYYKryF6p3mP/dcyay8=
 github.com/prometheus/client_model v0.6.2 h1:oBsgwpGs7iVziMvrGhE53c/GrLUsZdHnqNwqPLxwZyk=
 github.com/prometheus/client_model v0.6.2/go.mod h1:y3m2F6Gdpfy6Ut/GBsUqTWZqCUvMVzSfMLjcu6wAwpE=
 github.com/prometheus/common v0.69.0 h1:OA85nJQS/T/MaYh/Q2CcgDKSGWqNIgrBDvDH85CuiNk=
