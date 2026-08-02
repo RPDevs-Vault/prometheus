@@ -72,8 +72,8 @@ importers:
         specifier: ^9.4.0
         version: 9.4.0(react@17.0.2)
       http-proxy-middleware:
-        specifier: ^3.0.7
-        version: 3.0.7
+        specifier: ^4.1.1
+        version: 4.1.1
       jquery:
         specifier: ^3.7.1
         version: 3.7.1
@@ -3506,8 +3506,8 @@ packages:
     resolution: {integrity: sha512-k0zdNgqWTGA6aeIRVpvfVob4fL52dTfaehylg0Y4UvSySvOq/Y+BOyPrgpUrA7HylqvU8vIZGsRuXmspskV0Tg==}
     engines: {node: '>= 6'}
 
-  http-proxy-middleware@2.0.9:
-    resolution: {integrity: sha512-c1IyJYLYppU574+YI7R4QyX2ystMtVXZwIdzazUIPIJsHuWNd+mho2j+bKoHftndicGj9yh+xjd+l0yj7VeT1Q==}
+  http-proxy-middleware@2.0.10:
+    resolution: {integrity: sha512-RKzRWNPxUZqbuk3BC5mGVJbBnWgr+diEnjJexIOytFbBzDy88Fbh/YvBr3DsNrl1jYAfjWfpATEv0NO35FDuPQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@types/express': ^4.17.13
@@ -3515,9 +3515,9 @@ packages:
       '@types/express':
         optional: true
 
-  http-proxy-middleware@3.0.7:
-    resolution: {integrity: sha512-iwbQltVlx8bCrqePUM8C+hllHvdawVhQJaLrj1X7qllkvFQdXFsr16pW/mo9+JDVjN+QO2XUx9jd8SmoFkE5qw==}
-    engines: {node: ^14.18.0 || ^16.10.0 || >=18.0.0}
+  http-proxy-middleware@4.1.1:
+    resolution: {integrity: sha512-KX5ZofGXLFXqFAkQoOWZ+rTtaLTut7m0gyL+QzJrdejtIZ+F4bPPDoe7reISg2+v0CAz5OfVwEJEhty7X+e57g==}
+    engines: {node: ^22.15.0 || ^24.0.0 || >=26.0.0}
 
   http-proxy@1.18.1:
     resolution: {integrity: sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==}
@@ -3526,6 +3526,9 @@ packages:
   https-proxy-agent@5.0.1:
     resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
     engines: {node: '>= 6'}
+
+  httpxy@0.5.5:
+    resolution: {integrity: sha512-uDjmnPyp1q4Sgzf3w+J/Fc6UqcCEj0x4Wjp7OqK5dGhNeDgpyrAmnS6ey8QWrX3SWDon2DMKf9sBa5X9+CVyMA==}
 
   human-signals@2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
@@ -3699,6 +3702,10 @@ packages:
   is-plain-obj@3.0.0:
     resolution: {integrity: sha512-gwsOE28k+23GP1B6vFl1oVh/WOzmawBrKwo5Ev6wMKzPkaXaCDIQKzLnvsA42DRlbVTWorkgTKIviAKCWkfUwA==}
     engines: {node: '>=10'}
+
+  is-plain-obj@4.1.0:
+    resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
+    engines: {node: '>=12'}
 
   is-plain-object@5.0.0:
     resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
@@ -4573,6 +4580,10 @@ packages:
 
   picomatch@4.0.4:
     resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
+    engines: {node: '>=12'}
+
+  picomatch@4.0.5:
+    resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
 
   pify@2.3.0:
@@ -10075,9 +10086,9 @@ snapshots:
     dependencies:
       bser: 2.1.1
 
-  fdir@6.5.0(picomatch@4.0.4):
+  fdir@6.5.0(picomatch@4.0.5):
     optionalDependencies:
-      picomatch: 4.0.4
+      picomatch: 4.0.5
 
   file-entry-cache@6.0.1:
     dependencies:
@@ -10139,9 +10150,7 @@ snapshots:
 
   flatted@3.4.2: {}
 
-  follow-redirects@1.16.0(debug@4.4.3):
-    optionalDependencies:
-      debug: 4.4.3
+  follow-redirects@1.16.0: {}
 
   for-each@0.3.5:
     dependencies:
@@ -10454,10 +10463,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  http-proxy-middleware@2.0.9(@types/express@4.17.25):
+  http-proxy-middleware@2.0.10(@types/express@4.17.25):
     dependencies:
       '@types/http-proxy': 1.17.17
-      http-proxy: 1.18.1(debug@4.4.3)
+      http-proxy: 1.18.1
       is-glob: 4.0.3
       is-plain-obj: 3.0.0
       micromatch: 4.0.8
@@ -10466,21 +10475,20 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  http-proxy-middleware@3.0.7:
+  http-proxy-middleware@4.1.1:
     dependencies:
-      '@types/http-proxy': 1.17.17
       debug: 4.4.3
-      http-proxy: 1.18.1(debug@4.4.3)
+      httpxy: 0.5.5
       is-glob: 4.0.3
-      is-plain-object: 5.0.0
+      is-plain-obj: 4.1.0
       micromatch: 4.0.8
     transitivePeerDependencies:
       - supports-color
 
-  http-proxy@1.18.1(debug@4.4.3):
+  http-proxy@1.18.1:
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.16.0(debug@4.4.3)
+      follow-redirects: 1.16.0
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -10491,6 +10499,8 @@ snapshots:
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
+
+  httpxy@0.5.5: {}
 
   human-signals@2.1.0: {}
 
@@ -10642,6 +10652,8 @@ snapshots:
   is-path-inside@3.0.3: {}
 
   is-plain-obj@3.0.0: {}
+
+  is-plain-obj@4.1.0: {}
 
   is-plain-object@5.0.0: {}
 
@@ -11766,7 +11778,10 @@ snapshots:
 
   picomatch@2.3.2: {}
 
-  picomatch@4.0.4: {}
+  picomatch@4.0.4:
+    optional: true
+
+  picomatch@4.0.5: {}
 
   pify@2.3.0: {}
 
@@ -13309,8 +13324,8 @@ snapshots:
 
   tinyglobby@0.2.16:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.5)
+      picomatch: 4.0.5
 
   tmpl@1.0.5: {}
 
@@ -13585,7 +13600,7 @@ snapshots:
       express: 4.22.2
       graceful-fs: 4.2.11
       html-entities: 2.6.0
-      http-proxy-middleware: 2.0.9(@types/express@4.17.25)
+      http-proxy-middleware: 2.0.10(@types/express@4.17.25)
       ipaddr.js: 2.4.0
       launch-editor: 2.13.2
       open: 8.4.2
